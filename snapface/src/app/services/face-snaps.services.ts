@@ -1,19 +1,12 @@
-import { Component, OnInit} from '@angular/core'
-import { FaceSnap } from "../models/face-snap.model";
+import { Injectable } from '@angular/core';
+import { FaceSnap } from '../models/face-snap.model';
 
-
-@Component({
-  selector: 'app-face-snap-list',
-  templateUrl: './face-snap-list.component.html',
-  styleUrls: ['./face-snap-list.component.scss']
+@Injectable({
+    providedIn: 'root'
 })
-export class FaceSnapListComponent implements OnInit{
-  faceSnaps!: FaceSnap[];
 
-  constructor(){}
-
-  ngOnInit(): void {
-      this.faceSnaps = [
+export class FaceSnapsServices{
+    faceSnaps: FaceSnap[]= [
         {// new FaceSnap(
     title: 'Archibald',
     description: 'mon meilleur ami depuis tout petit!',
@@ -68,5 +61,10 @@ export class FaceSnapListComponent implements OnInit{
       }
 
       ];
-  }
+
+      getAllFaceSnaps(): FaceSnap[] {
+        return this.faceSnaps;
+      }
 }
+
+
