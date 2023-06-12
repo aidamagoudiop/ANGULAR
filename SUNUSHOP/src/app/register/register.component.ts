@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  constructor(private router:Router){ }
+  email = '';
+  password = '';
+  ngOnInit(): void{ }
+
+  redirecToHome(){
+    this.router.navigateByUrl("/home")
+  }
 }

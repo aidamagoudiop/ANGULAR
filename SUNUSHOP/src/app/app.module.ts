@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ProduitsComponent } from './components/produits/produits.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ProduitsComponent } from './components/produits/produits.component';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    ProduitsComponent
+    ProduitsComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
