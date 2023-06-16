@@ -1,18 +1,48 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC|01ZTHTZObnL.css,41H05pNqxHL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2L.css,21P6CS3L9LL.css,01oDR3IULNL.css,412+GafmYFL.css,01XPHJk60-L.css,01S0vRENeAL.css,21IbH+SoKSL.css,11MrAKjcAKL.css,21fecG8pUzL.css,11a5wZbuKrL.css,01CFUgsA-YL.css,31pHA2U5D9L.css,11qour3ND0L.css,116t+WD27UL.css,11gKCCKQV+L.css,11061HxnEvL.css,11oHt2HYxnL.css,01j2JE3j7aL.css,11JQtnL-6eL.css,21KA2rMsZML.css,11jtXRmppwL.css,0114z6bAEoL.css,21uwtfqr5aL.css,11QyqG8yiqL.css,11K24eOJg4L.css,11F2+OBzLyL.css,01890+Vwk8L.css,01g+cOYAZgL.css,01cbS3UK11L.css,21F85am0yFL.css,01giMEP+djL.css_.css?AUIClients/AmazonUI&btx4ugoz#fr.not-trident.577971-T1.577969-T1.632675-T1.577878-T1" /> -->
+
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --
+		 Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="C:/xampp/htdocs/ANGULAR/SUNUSHOP/src/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxx" crossorigin="anonymous" />
+		<!-- Slick
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		 nouislider 
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		 Font Awesome Icon
+		<link rel="stylesheet" href="css/font-awesome.min.css"> -->
+
+        <!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="C:/xampp/htdocs/ANGULAR/SUNUSHOP/src/styles.scss"/>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 </head>
+
+
 <header>
     <!-- TOP HEADER -->
     <div id="top-header">
-        <div class="container">
+        <div id="container" >
             <ul class="header-links pull-left">
                 <li  id="phone"><a href="#"><i class="fa fa-phone"></i> 77 177 17 10</a></li>
-                <li id="email"><a href="#"><i class="fa fa-envelope-o" ></i> sunushop@gmail.com</a></li>
+                <li id="email"><a href="https://www.gmail.com" target="_blank"><i class="fas fa-envelope" ></i> sunushop@gmail.com</a></li>
             </ul>
             <ul class="header-links pull-right">
-                <!-- <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li> -->
+                <li id="money"><a href="#"><i class="fas fa-money-bill-wave"></i> FCFA</a></li>
                 <li id="adresse"><a href="#"><i class="fa fa-map-marker"></i> en face foire</a></li>
-                <li id="compte"><a href="#"><i class="fa fa-user-o"></i> Mon compte</a></li>
+                <li id="compte"><a href="login"><i class="fa fa-user"></i> Mon compte</a></li>
             </ul>
         </div>
     </div>
@@ -21,11 +51,11 @@
     <!-- MAIN HEADER -->
     <div id="header">
         <!-- container -->
-        <div class="container">
+        <div id="container" >
             <!-- row -->
             <div class="row">
                 <!-- LOGO    col-md-3-->
-                <div class="row1">
+                <div class="col-md-3">
                     <div class="header-logo">
                         <a href="#" class="logo">
                             <img src="../assets/logo.png" alt="">
@@ -35,15 +65,25 @@
                 <!-- /LOGO -->
 
                 <!-- SEARCH BAR     col-md-6-->
-                <div class="row2">
+                <div class="col-md-6">
                     <div class="header-search">
                         <form>
                             <select class="input-select">
                                 <option value="0">Toutes les Categories</option>
-                                <option value="1">Categorie 01</option>
-                                <option value="1">Categorie 02</option>
+                                <option value="1" ><a href="login">Sacs</a>/option>
+                                <option value="2"><a href="">Chaussures</a> </option>
                             </select>
-                            <input class="input" placeholder="Rechercher ici">
+                            <input id="input" type="text"
+                            id="twotabsearchtextbox"
+                            value=""
+                            name="field-keywords"
+                            autocomplete="off"
+                            placeholder="Rechercher Sunushop.fr"
+                            class="nav-input nav-progressive-attribute"
+                            dir="auto"
+                            tabindex="0"
+                            aria-label="Rechercher Sunushop.fr"
+                            spellcheck="false">
                             <button class="search-btn">Rechercher</button>
                         </form>
                     </div>
@@ -51,7 +91,7 @@
                 <!-- /SEARCH BAR -->
 
                 <!-- ACCOUNT      col-md-3 clearfix-->
-                <div class="row11">
+                <div class="col-md-3">
                     <div class="header-ctn">
                         <!-- Wishlist -->
                         <!-- <div class="wishlist">
@@ -65,7 +105,7 @@
 
                         <!-- Cart -->
                         <div class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <a href="panier" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>Votre Panier</span>
                                 <div class="qty">3</div>
@@ -176,14 +216,14 @@
 
         <div class="container">
             <div class="row">
-                <div class="row1">
+                <div class="col-md-3">
                     <div class="footer">
                         <h3 class="footer-title">A Propos de nous</h3>
                         <p>Nous sommes une entreprise qui a l'obsession du client, nous plaçons l'intérêt du client au premier plan et travaillons en accord avec ce principe.</p> 
                         <ul class="liens-footer">
                             <div class="infos">   
                                 <li><a href="#"><i class="fa fa-phone"></i>77 177 17 10</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i>sunushop@gmail.com</a></li>
+                                <li><a href="#"><i class="fas fa-envelope"></i>sunushop@gmail.com</a></li>
                             </div>
                             <div class="medias">
 
@@ -201,13 +241,13 @@
                     </div>
                 </div>
 
-                <div class="row2">
+                <div class="col-md-6">
                     <div class="footer">
                         <h3 class="footer-title">Categories</h3>
                         <ul class="liens-footer">
-                            <li><a href="#">Sacs</a></li>
                             <li><a href="#">Chaussures</a></li>
                             <li><a href="#">Maquillage</a></li>
+                            <li><a href="#">Sacs</a></li>
                         </ul>
                     </div>
                 </div>
@@ -217,7 +257,7 @@
     
             <!-- <div class="clearfix visible-xs"></div> -->
             <div class="row">
-                <div class="row1">
+                <div class="col-md-3">
                     <div class="footer">
                         <h3 class="footer-title">Information</h3>
                         <ul class="liens-footer">
@@ -230,7 +270,7 @@
                     </div>
                 </div>
 
-                <div class="row2">
+                <div class="col-md-6">
                     <div class="footer">
                         <h3 class="footer-title">Service</h3>
                         <ul class="liens-footer">
@@ -247,10 +287,10 @@
     </div>  
     <!-- bottom footer -->
     <div id="bottom-footer" class="section">
-        <div class="container">
+        <div id="container">
         <!-- row -->
             <div class="row">
-                <div class="row1">
+                <div class="col-md-3">
                     <ul class="footer-payments">
                         <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
                         <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
@@ -278,3 +318,7 @@
 </span>
 
 
+
+
+
+<!-- <span class="s-back-arrow aok-inline-block"></span> -->

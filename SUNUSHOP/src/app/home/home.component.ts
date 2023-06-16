@@ -6,39 +6,52 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit{
-  Produit:any;
+  
   constructor(){}
   // voteArray: Array<boolean> =[];
   
-  voteArray=[{
+    // voteArray=[{
+  Produit =[{
     id:1,
     etatProduit:false,
-    name:"sac rouge"
+    name:'sac rouge',
+    cover: '',
+    price: 12998 
   },
   {
     id:2,
     etatProduit:false,
-    name:"sac vert"
+    name:'sac vert',
+    cover: '',
+    price: 7980
   },
   {
     id:3,
     etatProduit:false,
-    name:"sac rose"
+    name:'sac rose',
+    cover:'',
+    price: 10000
   },
   {
     id:4,
     etatProduit:false,
-    name:"sac meuve"
+    name: 'sac meuve',
+    cover: "",
+    price: 3990
   },
   {
     id:5,
     etatProduit:false,
-    name:"sac orange"
+    name:'sac orange',
+    cover: '',
+    price: 13000
   },
   {
     id:6,
     etatProduit:false,
-    name:"sac "
+    name:'sac ',
+    cover: "",
+    price: 7000
   }
 ]
 
@@ -47,13 +60,14 @@ export class HomeComponent implements OnInit{
   }
 
   verificationProduit($event:any,index:number){
-    this.voteArray.map((data:any)=>{
+    this.Produit.map((data:any)=>{
       data.etatProduit = false;
     })
-    this.voteArray[index].etatProduit=true;
+    this.Produit[index].etatProduit=true;
   }
   // allowOneVote(){
   //   this.vote
   // }
+  // this.voteArray.map((data:any)=>{
 
 }

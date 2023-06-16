@@ -16,4 +16,12 @@ export class RegisterComponent {
   redirecToHome(){
     this.router.navigateByUrl("/home")
   }
+
+  redirecTo(name :string){
+    if(name=="login")
+    this.router.navigateByUrl('/login')
+    else
+    this.router.navigateByUrl('/register')
+  }
+
 }

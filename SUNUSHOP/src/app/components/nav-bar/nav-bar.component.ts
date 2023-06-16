@@ -14,11 +14,11 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  redirecTo(name :string){
-    if(name=="login")
-    this.router.navigateByUrl('/login')
-    else
-    this.router.navigateByUrl('/register')
-  }
+  // redirecTo(name :string){
+  //   if(name=="login")
+  //   this.router.navigateByUrl('/login')
+  //   else
+  //   this.router.navigateByUrl('/register')
+  // }
 
 }

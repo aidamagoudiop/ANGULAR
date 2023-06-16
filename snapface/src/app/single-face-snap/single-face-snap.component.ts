@@ -1,26 +1,26 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.model';
 import { FaceSnapsServices } from '../services/face-snaps.services';
-import { Router } from '@angular/router';
-
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-face-snap',
-  templateUrl: './face-snap.component.html',
-  styleUrls: ['./face-snap.component.scss']
+  selector: 'app-single-face-snap',
+  templateUrl: './single-face-snap.component.html',
+  styleUrls: ['./single-face-snap.component.scss']
 })
-export class FaceSnapComponent implements OnInit{
-  @Input() faceSnap!: FaceSnap;
-
+export class SingleFaceSnapComponent implements OnInit {
+ 
+  faceSnap!: FaceSnap;
+  
   // title!: string;
   // description!: string;
-  // createdDate!: Date;
+  // createdDate!: D  ate;
   // snaps!: number;
   // imageUrl!:string;
   buttonText!: string;
 
   constructor(private faceSnapsService: FaceSnapsServices,
-              private router: Router){ }
+              private route: ActivatedRoute){ }
 
   ngOnInit(){
     // this.title = 'Archibald';
@@ -29,6 +29,8 @@ export class FaceSnapComponent implements OnInit{
     // this.snaps =  6;
     // this.imageUrl = 'https://www.shutterstock.com/image-illustration/abstract-hologram-3d-circuitry-cpu-260nw-1935883087.jpg';
     this.buttonText = 'Oh Snap!';
+    const faceSnapId = +this.route.snapshot.params['id'];
+    this.faceSnap = this.faceSnapsService.getFaceSnapById(faceSnapId);
   }
 
   onSnap(){
@@ -42,13 +44,11 @@ export class FaceSnapComponent implements OnInit{
       this.buttonText = 'Oh Snap!'; 
     }
   }
-
-  onViewFaceSnap() {
-    this.router.navigateByUrl(`facesnaps/${this.faceSnap.id}`);
 }
 
 
-}
+
+
 
 
 
