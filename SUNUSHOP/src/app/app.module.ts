@@ -11,6 +11,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { CompteComponent } from './compte/compte.component';
 import { PanierComponent } from './panier/panier.component';
+import { ContactComponent } from './contact/contact.component';
+import { AproposComponent } from './apropos/apropos.component';
+import { PaiementComponent } from './paiement/paiement.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { PanierComponent } from './panier/panier.component';
     ProduitsComponent,
     NavBarComponent,
     CompteComponent,
-    PanierComponent
+    PanierComponent,
+    ContactComponent,
+    AproposComponent,
+    PaiementComponent
   ],
   imports: [
     BrowserModule,

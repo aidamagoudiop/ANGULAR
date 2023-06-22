@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit{
     cover: "",
     price: 7000
   }
-]
+];
 
   ngOnInit(): void {
       // this.voteArray = new Array<boolean>(5).fill(false);
