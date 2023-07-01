@@ -137,7 +137,7 @@ ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-left: 300px;
+    // margin-left: 330px;
     
   }
   .header-links li {
@@ -155,7 +155,7 @@ ul, ol {
   }
   
   .header-links li:last-child {
-    margin-right: 240px;
+    margin-right: 210px;
     
   }
   
@@ -241,10 +241,15 @@ ul, ol {
       Cart
   \*----------------------------*/
   
+.wishlist{
+  margin-top: -20px;
+}
+
+
   .header-ctn {
     float: right;
     padding: 15px 0px;
-    margin-left: 570px;
+    margin-left: 500px;
     display: flex;
   }
   
@@ -559,7 +564,7 @@ ul, ol {
   }
   
   .footer {
-    margin: 5px 30px;
+    margin: -15px 30px;
     width: 90%;
     height: 3px;
     margin-bottom: 50px;
@@ -592,6 +597,8 @@ ul, ol {
   
   .liens-footer  {
     width: 100%;
+    margin-top: 10px;
+    margin-left: -10px;
    
   }
   
@@ -656,21 +663,28 @@ ul, ol {
 
   .infos{
     display: flex;
-    margin-top: -30px;
+    margin-top: -0px;
       justify-content: center;
       flex-wrap: wrap;
-     padding: -70px 0 0px;
-     margin-left: -50px;
+    //  padding: -10px 60px 0px;
+     margin-left: -20px;
 
   }
   .infos li{
-    margin-top: 0;
+    margin-top: -20px;
+
+  }
+  .infos li .fa{
+    margin-left: -70px;
+
+  }.infos li{
+    margin-top: -20px;
 
   }
   .medias{
       display: flex;
       margin-top: -1px;
-     margin-left: -25px;
+     margin-left: -50px;
       justify-content: center;
       flex-wrap: wrap;
      padding: 10px 0 10px;
@@ -679,7 +693,7 @@ ul, ol {
   
   .medias p{
       padding: 5px;
-      width: 20px;
+      width: 30px;
       margin-left: 10px;
       // color: #581435;
       border: 1px solid #d0abab;

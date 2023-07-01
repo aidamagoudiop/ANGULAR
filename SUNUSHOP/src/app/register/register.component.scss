@@ -7,6 +7,13 @@
     display: flex;
    
 }
+body{
+    background-color: black;
+    margin: 0;
+    top: 0;
+    margin-top: 0;
+}
+
 
 
 .container{
@@ -17,6 +24,10 @@
     align-items: center;
     justify-content: center;
     margin-top: -50px;
+}
+.container h1{
+    color: rgb(227, 149, 162) ;
+    font-size: 2.4em;
 }
 
 .register-content{

@@ -152,17 +152,22 @@ body{
 }
 .diop{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    font-size: 1.1em;
 }
 .presentation{
     display: flex;
     margin-left: 120px;
     margin-bottom: 20px;
 }
+.presentation h3{
+    font-size: 1.6em;
+    color: rgb(165, 55, 73);;
+}
 .terre{
     margin-right: 35px;
     margin-top: 35px;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 .terrew{
     margin-top: 15px;
@@ -183,7 +188,7 @@ body{
     background: plum;
 }
 .terrew h4:hover{
-    background: powderblue;
+    background: rgb(165, 55, 73)
 }
 .ssd{
     border: 1px solid gainsboro;
@@ -216,13 +221,13 @@ body{
     background: plum;
 }
 .A32:hover{
-    background: powderblue;
+    background: rgb(165, 55, 73)
 }
 .A33:hover{
-    background: powderblue;
+    background: rgb(165, 55, 73)
 }
 .A34:hover{
-    background: powderblue;
+    background: rgb(165, 55, 73)
 }
 .reseau{
     display: flex;
@@ -231,6 +236,14 @@ body{
 }
 .dame{
     margin-right: 50px;
+}
+.dame h3{ 
+    font-size: 1.6em;
+    color: rgb(165, 55, 73);
+}
+.listete h3{ 
+    font-size: 1.6em;
+    color: rgb(165, 55, 73);
 }
 .dame p{
     margin-top: 20px;
@@ -314,7 +327,9 @@ body{
     background: gray;
 }
 
-
+// #rien{
+//     width: 40%;
+// }
 
 
 
